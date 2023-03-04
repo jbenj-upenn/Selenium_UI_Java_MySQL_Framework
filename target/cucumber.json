@@ -1,0 +1,131 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-18T03:50:56.484Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7566456100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify user is able to login with valid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-is-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:233)\r\n\tat io.cucumber.core.runner.TestCaseState.attach(TestCaseState.java:70)\r\n\tat io.cucumber.java.Scenario.attach(Scenario.java:78)\r\n\tat step_definitions.Hooks.tearDown(Hooks.java:31)\r\n",
+              "duration": 266141200,
+              "status": "failed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 674052100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters valid \"valid.username\" and \"valid.password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"valid.username\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"valid.password\"",
+                  "offset": 39
+                }
+              ],
+              "location": "step_definitions.LoginSteps.user_enters_valid_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1005183200,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "step_definitions.Hooks.stepPause()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3573974400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on Sign In button",
+            "match": {
+              "location": "step_definitions.LoginSteps.user_clicks_on_sign_in_button()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1002280000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "step_definitions.Hooks.stepPause()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81912900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify user is successfully logged in to their account",
+            "match": {
+              "location": "step_definitions.LoginSteps.verify_user_is_successfully_logged_in_to_their_account()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 1002505000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "step_definitions.Hooks.stepPause()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Screen"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
+  }
+]
